@@ -1,0 +1,30 @@
+.header {
+    box-shadow:
+        0 0 2rem $grid,
+        0 0 0.8rem $grid,
+        0 0 2.8rem $grid;
+    z-index: 1;
+    border-radius: $radius;
+    background-color: $white;
+    padding: 20px 40px;
+    position: fixed;
+    left: $left-right;
+    right: $left-right;
+
+    /* media queries pour l'adaptatif */
+    @media (min-width: 576px) {
+        padding: $header-footer;
+    }
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 992px) {}
+
+    @media (min-width: 1200px) {}
+
+    @media (min-width: 1400px) {}
+
+    @media (min-width: 1600px) {}
+
+    @media (min-width: 2100px) {}
+}

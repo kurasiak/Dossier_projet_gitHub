@@ -1,0 +1,45 @@
+.navBar {
+    flex-direction: column;
+    @include footerNav;
+
+    div {
+        margin-top: 1rem;
+    }
+
+    .anchore {
+        margin-left: 30px;
+        color: $grid;
+        text-decoration: none;
+
+        &--purple.active {
+            color: $light-purple;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    /* media queries pour l'adaptatif */
+    @media (min-width: 576px) {
+        flex-direction: row;
+
+        div {
+            margin-top: 0;
+        }
+    }
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 992px) {}
+
+    @media (min-width: 1200px) {}
+
+    @media (min-width: 1400px) {}
+
+    @media (min-width: 1600px) {}
+
+    @media (min-width: 2100px) {
+        padding: $padding-2100;
+    }
+}

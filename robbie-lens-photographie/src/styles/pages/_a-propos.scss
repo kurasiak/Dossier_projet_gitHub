@@ -1,0 +1,88 @@
+.a-propos {
+  section {
+    padding: 10px;
+  }
+
+  .carre-contenu {
+    border-right: 1px solid $dark-purple;
+    border-bottom: 1px solid $dark-purple;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: $margin-bottom;
+
+    h2 {
+      margin-top: $margin-top;
+    }
+
+    ul {
+      margin-top: $margin-top;
+    }
+
+    &+div {
+      text-align: center;
+    }
+  }
+
+  .a-propos__responsive {
+    overflow-x: auto;
+  }
+
+  .a-propos-main {
+    margin: auto;
+  }
+
+  table {
+    color: $white;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    min-width: 20rem;
+    padding: 15px;
+    border: 1px solid $light-purple;
+  }
+
+  td {
+    padding: 80px;
+  }
+
+  h2 {
+    margin-bottom: $margin-bottom;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  /* media queries pour l'adaptatif */
+  @media (min-width: 576px) {}
+
+  @media (min-width: 768px) {
+    section {
+      padding: $section-padding;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .carre-contenu {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1200px) {}
+
+  @media (min-width: 1400px) {}
+
+  @media (min-width: 1600px) {}
+
+  @media (min-width: 2100px) {
+    section {
+      padding: $padding-2100;
+      margin: 0 5%;
+    }
+  }
+}
