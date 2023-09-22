@@ -1,0 +1,179 @@
+@import"../abstracts/_variables.css";
+
+html {
+  line-height: var(--line-height-html);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--color);
+  font-family: var(--font-family-text);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+  color: inherit;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1 {
+  font-size: calc(var(--font-size) + .375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: calc(var(--font-size) + .5rem);
+  }
+}
+
+h2 {
+  font-size: calc(var(--font-size) + 1rem + .325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: calc(var(--font-size) + 1rem);
+  }
+
+}
+
+h3 {
+  font-size: calc(var(--font-size) + 1rem + .3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: calc(var(--font-size) + .75rem);
+  }
+}
+
+h4 {
+  font-size: calc(var(--font-size) + .275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: calc(var(--font-size) + .5rem);
+  }
+}
+
+h5 {
+  font-size: calc(var(--font-size) + .25rem);
+}
+
+h6 {
+  font-size: var(--font-size);
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+}
+
+dt {
+  font-weight: 700;
+}
+
+/* Add the correct font weight in Chrome, Edge, and Safari. */
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: .875rem;
+}
+
+mark {
+  color: var(--color);
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+}
+
+/*
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size);
+}
+
+pre {
+  font-size: var(--font-size-code);
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+}
+
+code {
+  font-size: var(--font-size-code);
+  color: var(--color-code);
+}
+
+a>code {
+  color: inherit;
+}
+
+kbd {
+  font-size: var(--font-size-code);
+  color: var(--background-body);
+}
+
+kbd kbd {
+  font-size: var(--font-size);
+}
+
+small {
+  font-size: 80%;
+}
+
+caption {
+  color: rgba(33, 37, 41, 0.75);
+}
+
+/*
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari. */
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+legend {
+  color: inherit;
+  font-size: calc(var(--font-size) + .275rem + .3vw);
+  line-height: inherit;
+}
+
+@media (min-width: 1200px) {
+  legend {
+    font-size: calc(var(--font-size) + .5rem);
+  }
+}
