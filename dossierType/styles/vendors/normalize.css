@@ -1,13 +1,13 @@
-@import"../abstracts/_variables.css";
-
 *,
 *::before,
 *::after {
-  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--body-background);
+  margin: 0;
+  color: var(--change-general-color-font);
+  background: var(--change-general-background-color);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -23,32 +23,35 @@ h2,
 h1 {
   margin-top: 0;
   margin-bottom: .5rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  color: var(--change-general-titel-color-font);
 }
 
 hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
   margin: 1rem 0;
   color: inherit;
   border: 0;
   border-top: 1px solid;
-  opacity: .25;
+  opacity: 0.25;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--change-general-margin-bottom-paragraph);
 }
 
 a {
-  background-color: transparent;
+  color: #3366cc;
+  background: transparent;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  border-bottom: none;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
@@ -58,13 +61,6 @@ address {
   margin-bottom: 1rem;
 }
 
-ol,
-ul {
-  padding-left: 2rem;
-}
-
-ol,
-ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -86,29 +82,10 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-}
-
-pre code {
-  word-break: normal;
-}
-
-code {
-  word-wrap: break-word;
-}
-
-kbd {
-  padding: .1875rem .375rem;
-  background: var(--background-body-dark);
-  border-radius: .25rem;
-}
-
-kbd kbd {
-  padding: 0;
+mark {
+  padding: 0.1875rem;
+  color: var(--change-general-color-font);
+  background-color: #fff3cd;
 }
 
 sub,
@@ -118,15 +95,39 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 
-img {
-  border-style: none;
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+
+  & code {
+    color: inherit;
+    word-break: normal;
+  }
+}
+
+code {
+  color: #d63384;
+  word-wrap: break-word;
+
+  &>code {
+    color: inherit;
+  }
+}
+
+kbd {
+  padding: .1875rem .375rem;
+  color: var(--change-color-font-kdb);
+  background: var(--change-color-background-kdb);
+  border-radius: .25rem;
 }
 
 figure {
@@ -134,8 +135,18 @@ figure {
 }
 
 img,
+video,
+audio {
+  max-width: 100%;
+}
+
+img,
 svg {
   vertical-align: middle;
+}
+
+img {
+  border-style: none;
 }
 
 table {
@@ -146,6 +157,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  color: rgba(33, 37, 41, 0.75);
   text-align: left;
 }
 
@@ -169,14 +181,10 @@ label {
   display: inline-block;
 }
 
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-
-button,
 input,
-optgroup,
+button,
 select,
+optgroup,
 textarea {
   margin: 0;
 }
@@ -221,11 +229,6 @@ button:not(:disabled),
   cursor: pointer;
 }
 
-::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -241,6 +244,10 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+textarea {
+  resize: vertical;
+}
+
 fieldset {
   min-width: 0;
   padding: 0;
@@ -250,18 +257,16 @@ fieldset {
 
 legend {
   float: left;
-  margin-bottom: 0.5rem;
-  box-sizing: border-box;
-  display: table;
-  max-width: 100%;
+  width: 100%;
   padding: 0;
-  white-space: normal;
+  margin-bottom: 0.5rem;
 }
 
 legend+* {
   clear: left;
 }
 
+::-webkit-color-swatch-wrapper,
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
@@ -276,9 +281,14 @@ legend+* {
   height: auto;
 }
 
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button,
+::-webkit-file-upload-button,
+::file-selector-button {
+  -webkit-appearance: button;
 }
 
 progress {
@@ -287,7 +297,6 @@ progress {
 
 textarea {
   overflow: auto;
-  resize: vertical;
 }
 
 [type="checkbox"],
@@ -310,30 +319,6 @@ textarea {
   -webkit-appearance: none;
 }
 
-/*
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari. */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-details {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
 output {
   display: inline-block;
 }
@@ -347,10 +332,15 @@ summary {
   cursor: pointer;
 }
 
-progress {
-  vertical-align: baseline;
+details {
+  display: block;
 }
 
+summary {
+  display: list-item;
+}
+
+template,
 [hidden] {
-  display: none !important;
+  display: none;
 }

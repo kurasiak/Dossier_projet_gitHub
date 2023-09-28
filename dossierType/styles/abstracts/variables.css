@@ -1,0 +1,40 @@
+:root {
+  --modifying-general-font-family: 'Inclusive Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+  --change-general-color-font: #202122;
+  --change-general-titel-color-font: #000;
+  --change-general-background-color: #f8f9fa;
+
+  --change-general-font-size: 1rem;
+  --change-general-line-height: 1.5;
+  --change-general-letter-spacing: 1.92%;
+  --change-general-word-spacing: 2.56%;
+  --change-overall-font-size-per-line: 100ch;
+  --change-general-margin-bottom-paragraph: 2rem;
+
+
+  --changing-general-font-family-code: 'JetBrains Mono',
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+
+  --change-general-font-size-code: .9169rem;
+
+
+  --change-color-font-kdb: var(--change-general-background-color);
+  --change-color-background-kdb: #070605;
+}

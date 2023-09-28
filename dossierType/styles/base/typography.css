@@ -1,0 +1,138 @@
+html {
+  line-height: var(--change-general-line-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--modifying-general-font-family);
+  font-size: var(--change-general-font-size);
+  letter-spacing: var(--change-general-letter-spacing);
+  word-spacing: var(--change-general-word-spacing);
+  max-width: var(--change-overall-font-size-per-line);
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--changing-general-font-family-code);
+  font-size: var(--change-general-font-size-code);
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+}
+
+dt {
+  font-weight: 700;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+}
+
+pre,
+code,
+kbd {
+  font-size: .875rem;
+}
+
+pre code {
+  font-size: inherit;
+}
+
+kbd kbd {
+  font-size: var(--change-general-font-size);
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+legend {
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+@media (min-width: 1200px) {
+  legend {
+    font-size: 1.5rem;
+  }
+}
+
+::-webkit-file-upload-button,
+::file-selector-button,
+::-webkit-file-upload-button {
+  font: inherit;
+}
