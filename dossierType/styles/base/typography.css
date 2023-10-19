@@ -1,22 +1,13 @@
-html {
-  line-height: var(--change-general-line-height);
+body,
+textarea {
+  font-family: var(--general-font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 12%;
+  word-spacing: 16%;
+  max-width: 100ch;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  font-family: var(--modifying-general-font-family);
-  font-size: var(--change-general-font-size);
-  letter-spacing: var(--change-general-letter-spacing);
-  word-spacing: var(--change-general-word-spacing);
-  max-width: var(--change-overall-font-size-per-line);
-}
-
-pre,
-code,
-kbd,
-samp {
-  font-family: var(--changing-general-font-family-code);
-  font-size: var(--change-general-font-size-code);
 }
 
 h6,
@@ -30,46 +21,46 @@ h1 {
 }
 
 h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(137.5% + 1.5vw);
 }
 
 h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(132.5% + 0.9vw);
 }
 
 h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(130% + 0.6vw);
 }
 
 h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(127.5% + 0.3vw);
 }
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 250%;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 200%;
 
   }
 
   h3 {
-    font-size: 1.75rem;
+    font-size: 175%;
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 150%;
   }
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 125%;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 100%;
 }
 
 address {
@@ -87,7 +78,7 @@ strong {
 }
 
 small {
-  font-size: 0.875rem;
+  font-size: 87.5%;
 }
 
 sub,
@@ -98,8 +89,16 @@ sup {
 
 pre,
 code,
+kbd,
+samp {
+  font-family: var(--general-font-family-code);
+  font-size: 100%;
+}
+
+pre,
+code,
 kbd {
-  font-size: .875rem;
+  font-size: 87.5%;
 }
 
 pre code {
@@ -107,7 +106,7 @@ pre code {
 }
 
 kbd kbd {
-  font-size: var(--change-general-font-size);
+  font-size: 100%;
 }
 
 input,
@@ -121,18 +120,17 @@ textarea {
 }
 
 legend {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(127.5% + 0.3vw);
   line-height: inherit;
 }
 
 @media (min-width: 1200px) {
   legend {
-    font-size: 1.5rem;
+    font-size: 150%;
   }
 }
 
-::-webkit-file-upload-button,
-::file-selector-button,
+/* ::file-selector-button, */
 ::-webkit-file-upload-button {
   font: inherit;
 }
