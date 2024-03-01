@@ -1,0 +1,24 @@
+.btn {
+  padding: var(--base-tag-padding-01);
+  border-radius: var(--base-tag-radius-00);
+  border-spacing: 0.5rem 0;
+}
+
+/* media queries pour l'adaptatif */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 2100px) {}
+
+@media (min-width: 2800px) {}
+
+@media (min-width: 3300px) {}

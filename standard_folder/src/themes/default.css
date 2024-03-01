@@ -1,0 +1,66 @@
+:root[data-theme="light"] {
+  --global-text-color: #202122;
+  --global-color-of-titles: black;
+  --global-background-body: #f8f9fa;
+
+  --color-headings: var(--global-color-of-titles);
+  --color-legend: var(--global-color-of-titles);
+  --color-body: var(--global-text-color);
+  --color-anchor: #3366cc;
+  --color-anchor-hover: #17abf6;
+  --color-anchor-active: #faa700;
+  --color-anchor-visited: #795cb2;
+  --color-code: crimson;
+  --color-kbd: var(--global-text-color);
+  --color-caption: rgba(33, 37, 41, 0.75);
+  --color-fields: var(--global-text-color);
+  --color-blockquote: var(--global-text-color);
+
+  --filter-webkit-calendar-picker-indicator: invert(0);
+
+  --background-body: var(--global-background-body);
+  --background-blockquote: #f0f0f0;
+  --background-code: rgba(222, 222, 222, 0.3);
+  --background-kbd: #f0f0f0;
+  --background-optgroup: var(--global-background-body);
+
+  --border-blockquote: #e5e5e5;
+  --border-table-more-elements: #e5e5e5;
+  --border-kbd: #e5e5e5;
+  --border-fields-focus: #faa700;
+
+  --outline-fields-focus: #faa700;
+}
+
+:root[data-theme="dark"] {
+  --global-text-color: #dfdedd;
+  --global-color-of-titles: white;
+  --global-background-body: #161617;
+
+  --color-headings: var(--global-color-of-titles);
+  --color-legend: var(--global-color-of-titles);
+  --color-body: var(--global-text-color);
+  --color-anchor: #3366cc;
+  --color-anchor-hover: #17abf6;
+  --color-anchor-active: #faa700;
+  --color-anchor-visited: #795cb2;
+  --color-code: #ff9999;
+  --color-kbd: var(--global-text-color);
+  --color-caption: rgba(222, 218, 214, 0.75);
+  --color-fields: var(--global-text-color);
+
+  --filter-webkit-calendar-picker-indicator: invert(1);
+
+  --background-body: var(--global-background-body);
+  --background-blockquote: #2b2d2f;
+  --background-code: rgba(222, 222, 222, 0.1);
+  --background-kbd: #2b2d2f;
+  --background-optgroup: var(--global-background-body);
+
+  --border-blockquote: #5c6467;
+  --border-table-more-elements: #5c6467;
+  --border-kbd: #5c6467;
+  --border-fields-focus: #faa700;
+
+  --outline-fields-focus: #faa700;
+}

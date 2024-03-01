@@ -1,0 +1,20 @@
+/* https: https: //www.w3.org/TR/2011/WD-html5-20110525/tabular-data.html#tabular-data */
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  padding: var(--base-tag-padding-00);
+  border-color: inherit;
+  border: 0.15rem solid var(--border-table-more-elements);
+  border-collapse: collapse;
+  margin: var(--base-tag-margin-00);
+}
+
+caption {
+  padding: .5rem 0;
+  color: var(--color-caption);
+  text-align: left;
+}

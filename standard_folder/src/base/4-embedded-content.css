@@ -1,0 +1,16 @@
+/* https: //www.w3.org/TR/2011/WD-html5-20110525/embedded-content-1.html#embedded-content-1 */
+img,
+video,
+audio {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+iframe {
+  border-radius: var(--base-tag-radius-00);
+  border: 0;
+}
+
+svg {
+  vertical-align: middle;
+}
