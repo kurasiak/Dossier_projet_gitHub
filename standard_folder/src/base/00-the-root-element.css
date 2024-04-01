@@ -1,4 +1,15 @@
-/* media queries pour l'adaptatif */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "inclusiveSans-regular", var(--alternative-typefaces);
+  font-size: var(--typefaces-size);
+  line-height: 2rem;
+  -webkit-text-size-adjust: 100%;
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}

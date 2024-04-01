@@ -1,4 +1,12 @@
-/* media queries pour l'adaptatif */
+details,
+summary {
+  cursor: pointer;
+}
+
+summary {
+  display: list-item;
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}

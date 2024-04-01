@@ -1,66 +1,33 @@
 :root[data-theme="light"] {
-  --global-text-color: #202122;
-  --global-color-of-titles: black;
-  --global-background-body: #f8f9fa;
+  --color-headings: #0a0a0a;
+  --color-typefaces: #262626;
+  --color-background: #fafafa;
 
-  --color-headings: var(--global-color-of-titles);
-  --color-legend: var(--global-color-of-titles);
-  --color-body: var(--global-text-color);
-  --color-anchor: #3366cc;
-  --color-anchor-hover: #17abf6;
-  --color-anchor-active: #faa700;
-  --color-anchor-visited: #795cb2;
-  --color-code: crimson;
-  --color-kbd: var(--global-text-color);
-  --color-caption: rgba(33, 37, 41, 0.75);
-  --color-fields: var(--global-text-color);
-  --color-blockquote: var(--global-text-color);
+  --blockquote-color-background: #f3f4f6;
+  --blockquote-color-border: #e5e7eb;
+  --code-color-typefaces: crimson;
+  --code-color-background: rgba(222, 222, 222, 0.3);
+  --kbd-color-typefaces: var(--color-typefaces);
+  --kbd-color-border: #e5e7eb;
+  --kbd-color-background: #f3f4f6;
+  --elements-tables-color-border: #e5e7eb;
 
   --filter-webkit-calendar-picker-indicator: invert(0);
-
-  --background-body: var(--global-background-body);
-  --background-blockquote: #f0f0f0;
-  --background-code: rgba(222, 222, 222, 0.3);
-  --background-kbd: #f0f0f0;
-  --background-optgroup: var(--global-background-body);
-
-  --border-blockquote: #e5e5e5;
-  --border-table-more-elements: #e5e5e5;
-  --border-kbd: #e5e5e5;
-  --border-fields-focus: #faa700;
-
-  --outline-fields-focus: #faa700;
 }
 
 :root[data-theme="dark"] {
-  --global-text-color: #dfdedd;
-  --global-color-of-titles: white;
-  --global-background-body: #161617;
+  --color-headings: #fafafa;
+  --color-typefaces: #e5e5e5;
+  --color-background: #0a0a0a;
 
-  --color-headings: var(--global-color-of-titles);
-  --color-legend: var(--global-color-of-titles);
-  --color-body: var(--global-text-color);
-  --color-anchor: #3366cc;
-  --color-anchor-hover: #17abf6;
-  --color-anchor-active: #faa700;
-  --color-anchor-visited: #795cb2;
-  --color-code: #ff9999;
-  --color-kbd: var(--global-text-color);
-  --color-caption: rgba(222, 218, 214, 0.75);
-  --color-fields: var(--global-text-color);
+  --blockquote-color-background: #111827;
+  --blockquote-color-border: #1f2937;
+  --code-color-typefaces: #ff9999;
+  --code-color-background: rgba(222, 222, 222, 0.1);
+  --kbd-color-typefaces: var(--color-typefaces);
+  --kbd-color-border: #1f2937;
+  --kbd-color-background: #111827;
+  --elements-tables-color-border: #1f2937;
 
   --filter-webkit-calendar-picker-indicator: invert(1);
-
-  --background-body: var(--global-background-body);
-  --background-blockquote: #2b2d2f;
-  --background-code: rgba(222, 222, 222, 0.1);
-  --background-kbd: #2b2d2f;
-  --background-optgroup: var(--global-background-body);
-
-  --border-blockquote: #5c6467;
-  --border-table-more-elements: #5c6467;
-  --border-kbd: #5c6467;
-  --border-fields-focus: #faa700;
-
-  --outline-fields-focus: #faa700;
 }

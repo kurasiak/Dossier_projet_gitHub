@@ -1,0 +1,37 @@
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  padding: var(--upholstery-underlining-element);
+  border: 0.15rem solid var(--elements-tables-color-border);
+  border-collapse: collapse;
+  margin: var(--global-margin);
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--color-headings);
+  text-align: left;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 2100px) {}
+
+@media (min-width: 2800px) {}
+
+@media (min-width: 3300px) {}

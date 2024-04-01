@@ -1,9 +1,0 @@
-/* https://www.w3.org/TR/2011/WD-html5-20110525/interactive-elements.html#interactive-elements */
-details {
-  cursor: pointer;
-}
-
-summary {
-  display: list-item;
-  cursor: pointer;
-}

@@ -1,0 +1,167 @@
+fieldset {
+  padding: 0;
+  min-width: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  line-height: inherit;
+  padding: 0;
+  float: left;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: calc(var(--base-tag-font-size) + 0.5rem);
+  color: var(--color-legend);
+
+  &+* {
+    clear: left;
+  }
+}
+
+.btn,
+[role=button],
+[type=button],
+button,
+[type=reset],
+[type=submit] {
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: var(--global-raduis);
+  border: 0.1rem solid transparent;
+  padding: var(--upholstery-button);
+  border-spacing: 0.5rem 0;
+  cursor: pointer;
+}
+
+select,
+optgroup,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding: var(--upholstery-underlining-element);
+  border-radius: var(--global-raduis);
+  border: 0.1rem solid;
+}
+
+select,
+optgroup {
+  cursor: pointer;
+  background: var(--background-optgroup);
+}
+
+textarea {
+  line-height: inherit;
+  background: inherit;
+  margin: var(--global-margin);
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type=tel],
+[type=week],
+[type=url],
+[type=time],
+[type=email],
+[type=text] {
+  font-size: inherit;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  padding: var(--upholstery-underlining-element);
+  border-radius: var(--global-raduis);
+  border: 0.1rem solid;
+}
+
+[type=search],
+[type=password],
+[type=number],
+[type=month],
+[type=datetime-local],
+[type=date] {
+  font-size: inherit;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  padding: var(--upholstery-underlining-element);
+  border-radius: var(--global-raduis);
+  border: 0.1rem solid;
+}
+
+[type=color] {
+  cursor: pointer;
+  background: transparent;
+  border: 0.1rem solid transparent;
+}
+
+[type=search] {
+  cursor: pointer;
+  outline-offset: -2px;
+}
+
+:focus {
+  border-radius: var(--global-raduis);
+  border: 0.1rem solid var(--border-fields-focus);
+  outline: 0.1rem solid var(--outline-fields-focus);
+}
+
+:disabled {
+  border: 0.1rem solid #9ca3af;
+  color: #9ca3af;
+  background: #e5e7eb;
+  cursor: not-allowed;
+
+  &:hover {
+    color: #9ca3af;
+    background: #e5e7eb;
+  }
+
+  &:active {
+    background: #e5e7eb;
+  }
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field,
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 2100px) {}
+
+@media (min-width: 2800px) {}
+
+@media (min-width: 3300px) {}
