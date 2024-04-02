@@ -1,7 +1,6 @@
 a {
   text-decoration: transparent;
   color: #3b82f6;
-  transition: 0.25s ease-in-out;
   background: transparent;
 
   &:hover {
@@ -65,7 +64,7 @@ code {
 kbd {
   color: var(--kbd-color-typefaces);
   background: var(--kbd-color-background);
-  border: 0.1rem solid var(--kbd-color-border);
+  border: 0.25rem solid var(--kbd-color-border);
 
   & kbd {
     padding: 0;

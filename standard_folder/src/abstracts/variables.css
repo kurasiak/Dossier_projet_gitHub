@@ -5,10 +5,10 @@
   --alternative-typefaces-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 
   --typefaces-size: 1rem;
-  --global-raduis: 0.25rem;
+  --global-raduis: 0.375rem;
   --global-max-width: 80ch;
   --global-margin: 1rem 0rem;
-  --upholstery-underlining-element: 0.1rem 0.5rem;
+  --upholstery-underlining-element: 0.4rem 0.7rem;
   --upholstery-button: 0.4rem 0.7rem;
 
 

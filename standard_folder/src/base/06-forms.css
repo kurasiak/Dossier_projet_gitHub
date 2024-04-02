@@ -19,7 +19,6 @@ legend {
   }
 }
 
-.btn,
 [role=button],
 [type=button],
 button,
@@ -32,6 +31,16 @@ button,
   padding: var(--upholstery-button);
   border-spacing: 0.5rem 0;
   cursor: pointer;
+  color: #e5e5e5;
+  background: #3b82f6;
+
+  &:hover {
+    background: #1e40af;
+  }
+
+  &:active {
+    background: #f59e0b;
+  }
 }
 
 select,
@@ -70,10 +79,11 @@ progress {
   font-size: inherit;
   font-family: inherit;
   background: transparent;
-  color: inherit;
   padding: var(--upholstery-underlining-element);
   border-radius: var(--global-raduis);
   border: 0.1rem solid;
+  -webkit-filter: var(--filter-webkit-calendar-picker-indicator);
+  filter: var(--filter-webkit-calendar-picker-indicator);
 }
 
 [type=search],
@@ -85,10 +95,11 @@ progress {
   font-size: inherit;
   font-family: inherit;
   background: transparent;
-  color: inherit;
   padding: var(--upholstery-underlining-element);
   border-radius: var(--global-raduis);
   border: 0.1rem solid;
+  -webkit-filter: var(--filter-webkit-calendar-picker-indicator);
+  filter: var(--filter-webkit-calendar-picker-indicator);
 }
 
 [type=color] {
@@ -100,12 +111,6 @@ progress {
 [type=search] {
   cursor: pointer;
   outline-offset: -2px;
-}
-
-:focus {
-  border-radius: var(--global-raduis);
-  border: 0.1rem solid var(--border-fields-focus);
-  outline: 0.1rem solid var(--outline-fields-focus);
 }
 
 :disabled {
