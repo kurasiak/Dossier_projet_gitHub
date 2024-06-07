@@ -1,0 +1,12 @@
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* padding: 0.3rem; */
+  padding: 0.5905rem;
+  border: 0.1rem solid #64748b;
+}

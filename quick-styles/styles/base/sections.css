@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-size: var(--font-size-genreal);
+  line-height: inherit;
+  color: black;
+  background-color: #f9fafb;
+  -webkit-tap-highlight-color: #f9fafb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-weight: inherit; */
+  color: #083344;
+}
+
+h1 {
+  font-size: calc(var(--font-size-genreal) + 1.5rem);
+  margin: 0.67rem 0;
+}
+
+h2 {
+  font-size: calc(var(--font-size-genreal) + 1rem);
+}
+
+h3 {
+  font-size: calc(var(--font-size-genreal) + 0.75rem);
+}
+
+h4 {
+  font-size: calc(var(--font-size-genreal) + 0.5rem);
+}
+
+h5 {
+  font-size: calc(var(--font-size-genreal) + 0.25rem);
+}
+
+h6 {
+  font-size: var(--font-size-genreal);
+}

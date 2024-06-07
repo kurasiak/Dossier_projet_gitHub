@@ -1,0 +1,34 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-feature-settings: inherit; 
+  font-variation-settings: inherit; 
+  font-size: 100%; 
+  font-weight: inherit; 
+  line-height: inherit; 
+  color: inherit;
+  margin: 0; 
+  padding: 0;
+}
+
+button {
+  border: 0.1rem solid #36c;
+  border-radius: 0.25rem;
+  margin: 0.5905rem;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  color: #36c;
+
+  &:hover {
+    background: #36c;
+    color: inherit;
+  }
+
+  &:active {
+    border: 0.1rem solid #faa700;
+    background: #faa700;
+  }
+}
